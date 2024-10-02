@@ -1,0 +1,38 @@
+buildscript {
+    ext {
+        karateVersion = '1.5.0.RC1'
+        activeMqVersion = '5.15.2'
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'io.karatelabs:karate-junit5:' + karateVersion
+    testImplementation 'commons-io:commons-io:2.11.0'
+    testImplementation 'net.masterthought:cucumber-reporting:5.7.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.3.4'
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty 'cucumber.reporting.config.file', 'src/test/resources/cucumber-reporting.properties'
+    sourceSets {
+        test {
+            resources {
+                srcDirs 'src/test/java'
+            }
+        }
+    }
+}

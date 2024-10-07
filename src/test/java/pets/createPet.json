@@ -1,0 +1,18 @@
+{
+  "id": 45,
+  "category": {
+    "id": 1,
+    "name": "Dogs"
+  },
+  "name": "Fido",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "Fido"
+    }
+  ],
+  "status": "available"
+}

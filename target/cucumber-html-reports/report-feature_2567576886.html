@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>demo</td>
-      <td>02 Oct 2024, 11:56</td>
+      <td>07 Oct 2024, 12:01</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">pets/pets.feature</td>
-          <td      class="passed"    >32</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >38</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">33</td>
+          <td >0</td>
+          <td class="total">38</td>
 
-          <td  class="passed"    >3</td>
-          <td  class="failed"    >1</td>
+          <td  class="passed"    >4</td>
+          <td >0</td>
           <td class="total">4</td>
 
-          <td class="duration" data-value="3130822400">3.130</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="3613510402">3.613</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">pets/pets.feature</span>
 
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.044</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def urlBase = 'https://petstore.swagger.io'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>11:56:20.316 karate.env system property was:  null 
+        <pre>12:01:39.875 karate.env system property was:  null 
 </pre>
       </div>
     </div>
@@ -295,9 +295,36 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def petId = 42</span>
+  <span class="name">def petId = 45</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def createPetBody = read('./createPet.json')</span>
+
+  <span class="lead-duration duration">0.034</span>
 
 </div>
 
@@ -335,7 +362,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.777</span>
+  <span class="lead-duration duration">0.868</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
@@ -378,7 +405,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">url urlBase + petsPath</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -403,9 +430,36 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">request</span>
+  <span class="name">request createPetBody</span>
 
-  <span class="lead-duration duration">0.061</span>
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.843</span>
 
 </div>
 
@@ -423,58 +477,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>{
-&quot;id&quot;: 42,
-&quot;category&quot;:
-  {&quot;id&quot;: 1,
-  &quot;name&quot;: &quot;Dogs&quot;
-  },
-&quot;name&quot;: &quot;Fido&quot;,
-&quot;photoUrls&quot;: [&quot;string&quot;],
-&quot;tags&quot;: [
-  {&quot;id&quot;:1,
-  &quot;name&quot;: &quot;Fido&quot;
-  }
- ],
- &quot;status&quot;: &quot;available&quot;
- }</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method POST</span>
-
-  <span class="lead-duration duration">0.696</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>11:56:20.503 request:
+        <pre>12:01:40.163 request:
 1 &gt; POST https://petstore.swagger.io/v2/pet
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 133
@@ -482,11 +485,11 @@ $(document).ready(function() {
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.1)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;id&quot;:42,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Fido&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Fido&quot;}],&quot;status&quot;:&quot;available&quot;}
+{&quot;id&quot;:45,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Fido&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Fido&quot;}],&quot;status&quot;:&quot;available&quot;}
 
-11:56:21.106 response time in milliseconds: 596
+12:01:40.797 response time in milliseconds: 632
 1 &lt; 200
-1 &lt; Date: Wed, 02 Oct 2024 16:56:21 GMT
+1 &lt; Date: Mon, 07 Oct 2024 17:01:41 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -494,7 +497,7 @@ $(document).ready(function() {
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Server: Jetty(9.2.9.v20150224)
-{&quot;id&quot;:42,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Fido&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Fido&quot;}],&quot;status&quot;:&quot;available&quot;}
+{&quot;id&quot;:45,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Fido&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Fido&quot;}],&quot;status&quot;:&quot;available&quot;}
 
 </pre>
       </div>
@@ -542,7 +545,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.id == petId</span>
 
-  <span class="lead-duration duration">0.013</span>
+  <span class="lead-duration duration">0.015</span>
 
 </div>
 
@@ -607,10 +610,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.044</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
 
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -623,14 +626,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-8" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -642,7 +645,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details ">
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -650,7 +653,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def urlBase = 'https://petstore.swagger.io'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -664,11 +667,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
           <a>Doc string</a>
       </div>
-      <div id="msg-10" class="collapse collapsable-details">
-        <pre>11:56:20.316 karate.env system property was:  null 
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>12:01:39.875 karate.env system property was:  null 
 </pre>
       </div>
     </div>
@@ -713,9 +716,36 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def petId = 42</span>
+  <span class="name">def petId = 45</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def createPetBody = read('./createPet.json')</span>
+
+  <span class="lead-duration duration">0.034</span>
 
 </div>
 
@@ -753,10 +783,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.776</span>
+  <span class="lead-duration duration">0.867</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -769,14 +799,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details ">
+  <div id="element-10" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -788,7 +818,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-12" class="inner-level collapse collapsable-details ">
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -796,7 +826,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">url urlBase + petsPath + '/' + petId</span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.010</span>
 
 </div>
 
@@ -823,7 +853,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
 
-  <span class="lead-duration duration">0.756</span>
+  <span class="lead-duration duration">0.840</span>
 
 </div>
 
@@ -837,21 +867,21 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
           <a>Doc string</a>
       </div>
-      <div id="msg-13" class="collapse collapsable-details">
-        <pre>11:56:20.503 request:
-1 &gt; GET https://petstore.swagger.io/v2/pet/42
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>12:01:40.162 request:
+1 &gt; GET https://petstore.swagger.io/v2/pet/45
 1 &gt; Host: petstore.swagger.io
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.1)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-11:56:21.107 response time in milliseconds: 597
+12:01:40.797 response time in milliseconds: 632
 1 &lt; 200
-1 &lt; Date: Wed, 02 Oct 2024 16:56:21 GMT
+1 &lt; Date: Mon, 07 Oct 2024 17:01:41 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -859,7 +889,7 @@ $(document).ready(function() {
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Server: Jetty(9.2.9.v20150224)
-{&quot;id&quot;:42,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Fido Updated&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;}
+{&quot;id&quot;:45,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Fido Updated&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;}
 
 </pre>
       </div>
@@ -907,7 +937,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.id == petId</span>
 
-  <span class="lead-duration duration">0.013</span>
+  <span class="lead-duration duration">0.015</span>
 
 </div>
 
@@ -945,10 +975,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.025</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-14">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
 
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -961,14 +991,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-14" class="collapse collapsable-details ">
+  <div id="element-13" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -980,7 +1010,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-15" class="inner-level collapse collapsable-details ">
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -988,7 +1018,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def urlBase = 'https://petstore.swagger.io'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1002,11 +1032,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
           <a>Doc string</a>
       </div>
-      <div id="msg-16" class="collapse collapsable-details">
-        <pre>11:56:20.316 karate.env system property was:  null 
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>12:01:39.921 karate.env system property was:  null 
 </pre>
       </div>
     </div>
@@ -1051,9 +1081,36 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def petId = 42</span>
+  <span class="name">def petId = 45</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def createPetBody = read('./createPet.json')</span>
+
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -1091,13 +1148,13 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.778</span>
+  <span class="lead-duration duration">0.868</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
 
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
+  <span class="keyword indention">Scenario Outline</span>
   <span class="name">Actualizar el nombre de la mascota y el estatus de la mascota a &ldquo;sold&rdquo;</span>
 
 
@@ -1107,14 +1164,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-17" class="collapse collapsable-details ">
+  <div id="element-16" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1126,7 +1183,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-18" class="inner-level collapse collapsable-details ">
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1134,7 +1191,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">url urlBase + petsPath</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -1159,9 +1216,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">request</span>
+  <span class="name">request {&quot;id&quot;: 45, &quot;category&quot;: { &quot;id&quot;: 1, &quot;name&quot;: Dogs }, &quot;name&quot;: Fido Updated, &quot;status&quot;: sold}</span>
 
-  <span class="lead-duration duration">0.061</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1173,33 +1230,6 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-19" class="collapse collapsable-details">
-        <pre>{
-  &quot;id&quot;: 42,
-  &quot;category&quot;: {
-    &quot;id&quot;: 1,
-    &quot;name&quot;: &quot;Dogs&quot;
-  },
-  &quot;name&quot;: &quot;Fido Updated&quot;,
-  &quot;photoUrls&quot;: [
-    &quot;string&quot;
-  ],
-  &quot;tags&quot;: [
-    {
-      &quot;id&quot;: 1,
-      &quot;name&quot;: &quot;string&quot;
-    }
-  ],
-  &quot;status&quot;: &quot;sold&quot;
-}</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -1215,7 +1245,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method PUT</span>
 
-  <span class="lead-duration duration">0.696</span>
+  <span class="lead-duration duration">0.843</span>
 
 </div>
 
@@ -1229,23 +1259,23 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
           <a>Doc string</a>
       </div>
-      <div id="msg-20" class="collapse collapsable-details">
-        <pre>11:56:20.504 request:
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>12:01:40.162 request:
 1 &gt; PUT https://petstore.swagger.io/v2/pet
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 138
+1 &gt; Content-Length: 81
 1 &gt; Host: petstore.swagger.io
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.1)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;id&quot;:42,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Fido Updated&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;}
+{&quot;id&quot;:45,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Fido Updated&quot;,&quot;status&quot;:&quot;sold&quot;}
 
-11:56:21.106 response time in milliseconds: 595
+12:01:40.797 response time in milliseconds: 631
 1 &lt; 200
-1 &lt; Date: Wed, 02 Oct 2024 16:56:21 GMT
+1 &lt; Date: Mon, 07 Oct 2024 17:01:41 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -1253,7 +1283,7 @@ $(document).ready(function() {
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Server: Jetty(9.2.9.v20150224)
-{&quot;id&quot;:42,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Fido Updated&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;}
+{&quot;id&quot;:45,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Fido Updated&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;}
 
 </pre>
       </div>
@@ -1301,7 +1331,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.id == petId</span>
 
-  <span class="lead-duration duration">0.013</span>
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 
@@ -1393,10 +1423,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.025</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
 
 <div class="brief passed">
   <span class="keyword indention">Background</span>
@@ -1409,14 +1439,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-21" class="collapse collapsable-details ">
+  <div id="element-19" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1428,7 +1458,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-22" class="inner-level collapse collapsable-details ">
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1436,7 +1466,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def urlBase = 'https://petstore.swagger.io'</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1450,11 +1480,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
           <a>Doc string</a>
       </div>
-      <div id="msg-23" class="collapse collapsable-details">
-        <pre>11:56:20.317 karate.env system property was:  null 
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>12:01:39.921 karate.env system property was:  null 
 </pre>
       </div>
     </div>
@@ -1499,9 +1529,36 @@ $(document).ready(function() {
 
 <div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
-  <span class="name">def petId = 42</span>
+  <span class="name">def petId = 45</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def createPetBody = read('./createPet.json')</span>
+
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -1539,12 +1596,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.777</span>
+  <span class="lead-duration duration">0.869</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-24">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Consultar la mascota modificada por estatus (B&uacute;squeda por estatus)</span>
 
@@ -1555,16 +1612,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-24" class="collapse collapsable-details  in ">
+  <div id="element-22" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-25">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1574,7 +1631,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-25" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1582,7 +1639,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">url urlBase + petsPath + '/findByStatus?status=sold'</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -1609,7 +1666,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
 
-  <span class="lead-duration duration">0.757</span>
+  <span class="lead-duration duration">0.843</span>
 
 </div>
 
@@ -1623,11 +1680,11 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
           <a>Doc string</a>
       </div>
-      <div id="msg-26" class="collapse collapsable-details">
-        <pre>11:56:20.503 request:
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>12:01:40.162 request:
 1 &gt; GET https://petstore.swagger.io/v2/pet/findByStatus?status=sold
 1 &gt; Host: petstore.swagger.io
 1 &gt; Connection: Keep-Alive
@@ -1635,9 +1692,9 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-11:56:21.106 response time in milliseconds: 597
+12:01:40.797 response time in milliseconds: 633
 1 &lt; 200
-1 &lt; Date: Wed, 02 Oct 2024 16:56:21 GMT
+1 &lt; Date: Mon, 07 Oct 2024 17:01:41 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -1645,7 +1702,7 @@ $(document).ready(function() {
 1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 1 &lt; Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 1 &lt; Server: Jetty(9.2.9.v20150224)
-[{&quot;id&quot;:42,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Fido Updated&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:88888,&quot;category&quot;:{&quot;id&quot;:123,&quot;name&quot;:&quot;string&quot;},&quot;name&quot;:&quot;&#1055;&#1077;&#1089;&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;&#1058;&#1086;&#1083;&#1080;&#1082;&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:173218101,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;Snoopy&quot;,&quot;photoUrls&quot;:[&quot;&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;vacinado&quot;}],&quot;status&quot;:&quot;sold&quot;}]
+[{&quot;id&quot;:32165,&quot;category&quot;:{&quot;id&quot;:32165,&quot;name&quot;:&quot;curlgraycat&quot;},&quot;name&quot;:&quot;marsi&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:32165,&quot;name&quot;:&quot;kornish-rex&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854775694,&quot;name&quot;:&quot;Bajusz&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:9223372036854775699,&quot;name&quot;:&quot;Bajusz&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1618,&quot;category&quot;:{&quot;id&quot;:404,&quot;name&quot;:&quot;Rabbit&quot;},&quot;name&quot;:&quot;Bubenchiq&quot;,&quot;photoUrls&quot;:[&quot;url-to-photo&quot;],&quot;tags&quot;:[{&quot;id&quot;:1613,&quot;name&quot;:&quot;bubenchikovie&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:3756112660,&quot;category&quot;:{&quot;id&quot;:2098935991,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:2017984886,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2890802644,&quot;category&quot;:{&quot;id&quot;:2761408230,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:698795386,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:2722832995,&quot;category&quot;:{&quot;id&quot;:51819620,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:2502288735,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1713081711,&quot;category&quot;:{&quot;id&quot;:1983044271,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1442377139,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1752929238,&quot;category&quot;:{&quot;id&quot;:1976127509,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:288686471,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:7574746,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Cat&quot;},&quot;name&quot;:&quot;Hardy&quot;,&quot;photoUrls&quot;:[&quot;https://i.pinimg.com/originals/5c/2c/44/5c2c44f16da1caf134c00bc4f9c72ea0.jpg&quot;],&quot;tags&quot;:[{&quot;id&quot;:7805,&quot;name&quot;:&quot;Mainecoon&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:3968514602,&quot;category&quot;:{&quot;id&quot;:2697174007,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:2036952388,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1447658629,&quot;category&quot;:{&quot;id&quot;:3113135567,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:2644543703,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:635021277,&quot;category&quot;:{&quot;id&quot;:704968083,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:2233928307,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:3765820916,&quot;category&quot;:{&quot;id&quot;:4136048907,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:1903343783,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:3039656930,&quot;category&quot;:{&quot;id&quot;:1195353391,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:954399390,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:4084545741,&quot;category&quot;:{&quot;id&quot;:2322362806,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;hello kity&quot;,&quot;photoUrls&quot;:[&quot;http://foo.bar.com/1&quot;,&quot;http://foo.bar.com/2&quot;],&quot;tags&quot;:[{&quot;id&quot;:3825406115,&quot;name&quot;:&quot;blank&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:13,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;Chien&quot;},&quot;name&quot;:&quot;Baxter&quot;,&quot;photoUrls&quot;:[&quot;youyou&quot;],&quot;tags&quot;:[{&quot;id&quot;:13,&quot;name&quot;:&quot;Bichon fris&eacute;&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:42,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Fido Update 123&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:444555,&quot;category&quot;:{&quot;id&quot;:1234,&quot;name&quot;:&quot;cat&quot;},&quot;name&quot;:&quot;Masya&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:1234567,&quot;category&quot;:{&quot;id&quot;:35,&quot;name&quot;:&quot;caini&quot;},&quot;name&quot;:&quot;Grivei update&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;dalmatian&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:20593238,&quot;category&quot;:{&quot;id&quot;:96650357,&quot;name&quot;:&quot;ut aute&quot;},&quot;name&quot;:&quot;doggie&quot;,&quot;photoUrls&quot;:[&quot;in deserunt sit qui elit&quot;,&quot;do dolore&quot;],&quot;tags&quot;:[{&quot;id&quot;:80489283,&quot;name&quot;:&quot;dolore elit aute Excepteur anim&quot;},{&quot;id&quot;:-29854588,&quot;name&quot;:&quot;enim&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:7731646722340098322,&quot;category&quot;:{&quot;id&quot;:7731646722340098322,&quot;name&quot;:&quot;Huskie&quot;},&quot;name&quot;:&quot;Huskie&quot;,&quot;photoUrls&quot;:[&quot;ArrayItem1&quot;],&quot;tags&quot;:[{&quot;id&quot;:7731646722340098322,&quot;name&quot;:&quot;Huskie&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:89965461321942,&quot;category&quot;:{&quot;id&quot;:15,&quot;name&quot;:&quot;dogasd&#1072;&#1087;&quot;},&quot;name&quot;:&quot;Chappi dog 78&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:5423735,&quot;category&quot;:{&quot;id&quot;:0,&quot;name&quot;:&quot;dog&quot;},&quot;name&quot;:&quot;Mi&quot;,&quot;photoUrls&quot;:[&quot;string&quot;],&quot;tags&quot;:[{&quot;id&quot;:0,&quot;name&quot;:&quot;string&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:331241414211,&quot;category&quot;:{&quot;id&quot;:3,&quot;name&quot;:&quot;123&quot;},&quot;name&quot;:&quot;ddwq&quot;,&quot;photoUrls&quot;:[&quot;123&quot;,&quot;123131&quot;],&quot;tags&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;123&quot;}],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:45,&quot;category&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;Dogs&quot;},&quot;name&quot;:&quot;Fido Updated&quot;,&quot;photoUrls&quot;:[],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:17,&quot;name&quot;:&quot;Special_char_owner_!@#$^&amp;()`.testing&quot;,&quot;photoUrls&quot;:[&quot;https://petstore3.swagger.io/resources/photos/623389095.jpg&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;},{&quot;id&quot;:19467,&quot;name&quot;:&quot;&#35211;&#38911;&#35265;&#21709;&#20206;&#20175;!$%&amp;()*+,-&#388;&#389;&#390;&#7710;&#7711;&#7744;&#694;&#695;&#696;&#259;&#260;&#261;&quot;,&quot;photoUrls&quot;:[&quot;https://petstore3.swagger.io/resources/photos/623389095.jpg&quot;],&quot;tags&quot;:[],&quot;status&quot;:&quot;sold&quot;}]
 
 </pre>
       </div>
@@ -1689,9 +1746,520 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">match response[*].id == petId</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>12:01:40.805 [print] [
+  {
+    &quot;id&quot;: 32165,
+    &quot;category&quot;: {
+      &quot;id&quot;: 32165,
+      &quot;name&quot;: &quot;curlgraycat&quot;
+    },
+    &quot;name&quot;: &quot;marsi&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 32165,
+        &quot;name&quot;: &quot;kornish-rex&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854775694,
+    &quot;name&quot;: &quot;Bajusz&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 9223372036854775699,
+    &quot;name&quot;: &quot;Bajusz&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1618,
+    &quot;category&quot;: {
+      &quot;id&quot;: 404,
+      &quot;name&quot;: &quot;Rabbit&quot;
+    },
+    &quot;name&quot;: &quot;Bubenchiq&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;url-to-photo&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1613,
+        &quot;name&quot;: &quot;bubenchikovie&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 3756112660,
+    &quot;category&quot;: {
+      &quot;id&quot;: 2098935991,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 2017984886,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 2890802644,
+    &quot;category&quot;: {
+      &quot;id&quot;: 2761408230,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 698795386,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 2722832995,
+    &quot;category&quot;: {
+      &quot;id&quot;: 51819620,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 2502288735,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1713081711,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1983044271,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1442377139,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1752929238,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1976127509,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 288686471,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 7574746,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Cat&quot;
+    },
+    &quot;name&quot;: &quot;Hardy&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://i.pinimg.com/originals/5c/2c/44/5c2c44f16da1caf134c00bc4f9c72ea0.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 7805,
+        &quot;name&quot;: &quot;Mainecoon&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 3968514602,
+    &quot;category&quot;: {
+      &quot;id&quot;: 2697174007,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 2036952388,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1447658629,
+    &quot;category&quot;: {
+      &quot;id&quot;: 3113135567,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 2644543703,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 635021277,
+    &quot;category&quot;: {
+      &quot;id&quot;: 704968083,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 2233928307,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 3765820916,
+    &quot;category&quot;: {
+      &quot;id&quot;: 4136048907,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1903343783,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 3039656930,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1195353391,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 954399390,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 4084545741,
+    &quot;category&quot;: {
+      &quot;id&quot;: 2322362806,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;hello kity&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;http://foo.bar.com/1&quot;,
+      &quot;http://foo.bar.com/2&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 3825406115,
+        &quot;name&quot;: &quot;blank&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 13,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;Chien&quot;
+    },
+    &quot;name&quot;: &quot;Baxter&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;youyou&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 13,
+        &quot;name&quot;: &quot;Bichon fris&eacute;&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 42,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dogs&quot;
+    },
+    &quot;name&quot;: &quot;Fido Update 123&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 444555,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1234,
+      &quot;name&quot;: &quot;cat&quot;
+    },
+    &quot;name&quot;: &quot;Masya&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 1234567,
+    &quot;category&quot;: {
+      &quot;id&quot;: 35,
+      &quot;name&quot;: &quot;caini&quot;
+    },
+    &quot;name&quot;: &quot;Grivei update&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;dalmatian&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 20593238,
+    &quot;category&quot;: {
+      &quot;id&quot;: 96650357,
+      &quot;name&quot;: &quot;ut aute&quot;
+    },
+    &quot;name&quot;: &quot;doggie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;in deserunt sit qui elit&quot;,
+      &quot;do dolore&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 80489283,
+        &quot;name&quot;: &quot;dolore elit aute Excepteur anim&quot;
+      },
+      {
+        &quot;id&quot;: -29854588,
+        &quot;name&quot;: &quot;enim&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 7731646722340098322,
+    &quot;category&quot;: {
+      &quot;id&quot;: 7731646722340098322,
+      &quot;name&quot;: &quot;Huskie&quot;
+    },
+    &quot;name&quot;: &quot;Huskie&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;ArrayItem1&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 7731646722340098322,
+        &quot;name&quot;: &quot;Huskie&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 89965461321942,
+    &quot;category&quot;: {
+      &quot;id&quot;: 15,
+      &quot;name&quot;: &quot;dogasd&#1072;&#1087;&quot;
+    },
+    &quot;name&quot;: &quot;Chappi dog 78&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 5423735,
+    &quot;category&quot;: {
+      &quot;id&quot;: 0,
+      &quot;name&quot;: &quot;dog&quot;
+    },
+    &quot;name&quot;: &quot;Mi&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;string&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 0,
+        &quot;name&quot;: &quot;string&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 331241414211,
+    &quot;category&quot;: {
+      &quot;id&quot;: 3,
+      &quot;name&quot;: &quot;123&quot;
+    },
+    &quot;name&quot;: &quot;ddwq&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;123&quot;,
+      &quot;123131&quot;
+    ],
+    &quot;tags&quot;: [
+      {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;123&quot;
+      }
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 45,
+    &quot;category&quot;: {
+      &quot;id&quot;: 1,
+      &quot;name&quot;: &quot;Dogs&quot;
+    },
+    &quot;name&quot;: &quot;Fido Updated&quot;,
+    &quot;photoUrls&quot;: [
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 17,
+    &quot;name&quot;: &quot;Special_char_owner_!@#$^&amp;()`.testing&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://petstore3.swagger.io/resources/photos/623389095.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  },
+  {
+    &quot;id&quot;: 19467,
+    &quot;name&quot;: &quot;&#35211;&#38911;&#35265;&#21709;&#20206;&#20175;!$%&amp;()*+,-&#388;&#389;&#390;&#7710;&#7711;&#7744;&#694;&#695;&#696;&#259;&#260;&#261;&quot;,
+    &quot;photoUrls&quot;: [
+      &quot;https://petstore3.swagger.io/resources/photos/623389095.jpg&quot;
+    ],
+    &quot;tags&quot;: [
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+  }
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response[*].id contains 45</span>
 
   <span class="lead-duration duration">0.013</span>
 
@@ -1702,43 +2270,9 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-27">
-          <a>match</a>
-      </div>
-      <div id="msg-27" class="collapse collapsable-details  in ">
-        <pre>match failed: EQUALS
-  $ | data types don't match (LIST:NUMBER)
-  [42,88888,173218101]
-  42
-
-classpath:pets/pets.feature:72</pre>
-      </div>
-    </div>
-  </div>
 
 
 
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-28" class="collapse collapsable-details">
-        <pre>11:56:21.129 classpath:pets/pets.feature:72
-And match response[*].id == petId
-match failed: EQUALS
-  $ | data types don't match (LIST:NUMBER)
-  [42,88888,173218101]
-  42
-
-classpath:pets/pets.feature:72
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
